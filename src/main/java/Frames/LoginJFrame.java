@@ -41,8 +41,6 @@ public class LoginJFrame extends JFrame {
 
         emailTextField = new JTextField();
         emailTextField.setBounds(90, 94, 200, 25);
-        emailTextField.setText("itshakbar@gmail.com");
-
 
         JLabel passwordLabel = new JLabel(Definitions.passwordLabel);
         passwordLabel.setBounds((widthDimension - 100), 10, 100, 250);
@@ -50,8 +48,6 @@ public class LoginJFrame extends JFrame {
 
         passwordField = new JPasswordField();
         passwordField.setBounds(90, 124, 200, 25);
-        passwordField.setText("a2b1c4d3");
-
 
         loginButton = new JButton(Definitions.loginButton);
         loginButton.setBounds((widthDimension - 400) / 2, 175, 400, 50);

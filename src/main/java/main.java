@@ -9,7 +9,7 @@ import javax.swing.*;
 import java.awt.*;
 
 
-public class Yad2AutomationWithGUI {
+public class main {
     public static void main(String[] args){
         try {
             UIManager.setLookAndFeel( new FlatDarculaLaf() );

@@ -42,7 +42,7 @@ public class DashboardJFrame extends JFrame {
 
 
         adJList = new JList();
-        adJList.setComponentOrientation(ComponentOrientation.RIGHT_TO_LEFT);
+        adJList.setComponentOrientation(ComponentOrientation.RIGHT_TO_LEFT);;
 
         JScrollPane adJScrollPane = new JScrollPane(adJList);
         adJScrollPane.setBounds(0,200,widthDimension,400);

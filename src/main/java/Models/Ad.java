@@ -40,8 +40,8 @@ public class Ad {
 
     @Override
     public String toString() {
-        String pattern = "dd/mm/yy בשעה HH:MM";
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
-        return String.format("מודעה מס': %d - %s הוקפצה לאחרונה ב: %s", this.id, this.title, /*simpleDateFormat.format(*/this.lastBounced/*)*/);
+        this.lastBounced = this.lastBounced.replace("T"," ").replace(".000Z","");
+        this.title = this.title.replace("\n","").replace("\n","");
+        return String.format("מודעה מס' %d - %s הוקפצה לאחרונה ב: %s",this.id, this.title, this.lastBounced);
     }
 }
