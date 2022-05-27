@@ -41,7 +41,6 @@ public class Ad {
     @Override
     public String toString() {
         this.lastBounced = this.lastBounced.replace("T"," ").replace(".000Z","");
-        this.title = this.title.replace("\n","").replace("\n","");
-        return String.format("מודעה מס' %d - %s הוקפצה לאחרונה ב: %s",this.id, this.title, this.lastBounced);
+        return String.format("מודעה מס' %d - %s הוקפצה לאחרונה ב: %s",this.id, this.title.replaceAll("(\\r|\\n)", ""), this.lastBounced);
     }
 }
