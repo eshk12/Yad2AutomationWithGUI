@@ -1,23 +1,16 @@
-package Listeners;
+package com.Yad2AutomationWithGUI.bouncer.Listeners;
 
-import Frames.DashboardJFrame;
-import Frames.LoginJFrame;
-import Models.Ad;
-import Services.FlowControl;
-import Utils.Definitions;
+import com.Yad2AutomationWithGUI.bouncer.Frames.DashboardJFrame;
+import com.Yad2AutomationWithGUI.bouncer.Frames.LoginJFrame;
+import com.Yad2AutomationWithGUI.bouncer.Services.FlowControl;
+import com.Yad2AutomationWithGUI.bouncer.Utils.Definitions;
 
 import javax.swing.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.io.IOException;
-import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.time.Instant;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
@@ -29,7 +22,6 @@ public class EventListener {
     public EventListener(LoginJFrame loginJFrame, DashboardJFrame dashboardJFrame) {
         this.loginJFrame = loginJFrame;
         this.dashboardJFrame = dashboardJFrame;
-
         loginJFrame.getLoginButton().addMouseListener(new MouseAdapter() {
             public void mouseClicked(MouseEvent e) {
                 String email = loginJFrame.getEmailTextField().getText();
@@ -60,6 +52,7 @@ public class EventListener {
         exec.scheduleAtFixedRate(new Runnable() {
             @Override
             public void run() {
+
                 FlowControl flowControlSingleton = FlowControl.getInstance();
                 if (flowControlSingleton.isAbleToBounce()) {
                     Instant timeForNextBounce = (flowControlSingleton.getLastBounced().plus(Definitions.bounceTime));

@@ -1,4 +1,4 @@
-package Models;
+package com.Yad2AutomationWithGUI.bouncer.Models;
 
 public class Token {
     private String accessToken;

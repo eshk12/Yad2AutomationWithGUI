@@ -1,7 +1,4 @@
-package Models;
-
-import java.text.SimpleDateFormat;
-import java.util.Date;
+package com.Yad2AutomationWithGUI.bouncer.Models;
 
 public class Ad {
     private int id;

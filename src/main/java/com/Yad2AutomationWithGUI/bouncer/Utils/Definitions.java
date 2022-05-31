@@ -1,4 +1,4 @@
-package Utils;
+package com.Yad2AutomationWithGUI.bouncer.Utils;
 
 import java.time.Duration;
 

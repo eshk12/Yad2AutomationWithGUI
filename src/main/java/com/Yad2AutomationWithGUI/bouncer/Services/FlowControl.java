@@ -1,8 +1,8 @@
-package Services;
+package com.Yad2AutomationWithGUI.bouncer.Services;
 
-import Frames.DashboardJFrame;
-import Models.Ad;
-import Models.Token;
+import com.Yad2AutomationWithGUI.bouncer.Frames.DashboardJFrame;
+import com.Yad2AutomationWithGUI.bouncer.Models.Ad;
+import com.Yad2AutomationWithGUI.bouncer.Models.Token;
 
 import java.io.IOException;
 import java.time.Instant;

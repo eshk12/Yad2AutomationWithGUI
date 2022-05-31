@@ -1,8 +1,8 @@
-package Services;
+package com.Yad2AutomationWithGUI.bouncer.Services;
 
-import Models.Ad;
-import Models.Token;
-import Utils.HttpRequest;
+import com.Yad2AutomationWithGUI.bouncer.Models.Ad;
+import com.Yad2AutomationWithGUI.bouncer.Models.Token;
+import com.Yad2AutomationWithGUI.bouncer.Utils.HttpRequest;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;

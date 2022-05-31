@@ -1,6 +1,6 @@
-package Frames;
+package com.Yad2AutomationWithGUI.bouncer.Frames;
 
-import Utils.Definitions;
+import com.Yad2AutomationWithGUI.bouncer.Utils.Definitions;
 
 import javax.swing.*;
 import java.awt.*;
